@@ -1,12 +1,9 @@
-mod letter;
+mod enigma;
 mod reflector;
 mod rotor;
-mod settings;
+mod utils;
 
-pub use letter::Letter;
-pub use settings::ReflectorType;
-pub use settings::RotorType;
-pub use settings::Settings;
-
-
-pub char_to_byte
+pub use enigma::EnigmaMachine;
+pub use reflector::ReflectorSpec;
+pub use rotor::RotorSpec;
+pub use utils::KeyedReader;
